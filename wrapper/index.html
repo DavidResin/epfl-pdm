@@ -1,0 +1,122 @@
+<html><head>
+  <title>PhET-iO Events</title>
+  <style media="screen" type="text/css">
+
+    span {
+      display: block;
+      padding-bottom: 12px;
+      font-family: "Century Gothic";
+      font-size: 23px
+    }
+
+    textarea {
+      margin-bottom: 20px;
+    }
+
+    div.relative {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+
+    iframe {
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="relative">
+
+  <span>Interact with the PhET-iO Simulation:</span>
+
+  <!--The frame for the simulation.
+      Do not specify the src until after listeners are added, so no messages will be missed.-->
+  <iframe id="sim" width="640" height="400" src="https://phet-io.colorado.edu/sims/beers-law-lab/1.6.15-phetio/beers-law-lab_en-phetio.html?production&amp;phetioEmitStates=true&amp;phetioEmitInputEvents=true&amp;sim=beers-law-lab">
+  </iframe>
+
+  <!--<span>The Event Log streams out below:</span>-->
+  <textarea readonly="" id="textarea" rows="31" cols="110">{
+  "messageIndex": 0,
+  "eventType": "wrapper",
+  "phetioID": "beersLawLab.simIFrameAPI",
+  "componentType": "TSimIFrameAPI",
+  "event": "invoked",
+  "time": 1615190243141,
+  "parameters": {
+    "phetioID": "phetio",
+    "method": "addExpressions",
+    "args": [
+      []
+    ],
+    "messageID": 2,
+    "protocol": "phet-io-0.0.1"
+  }
+}
+{
+  "messageIndex": 1,
+  "eventType": "wrapper",
+  "phetioID": "beersLawLab.simIFrameAPI",
+  "componentType": "TSimIFrameAPI",
+  "event": "invoked",
+  "time": 1615190243142,
+  "parameters": {
+    "phetioID": "phetio",
+    "method": "launchSimulation",
+    "args": [],
+    "messageID": 3,
+    "protocol": "phet-io-0.0.1"
+  }
+}
+{
+  "messageIndex": 2,
+  "eventType": "model",
+  "phetioID": "beersLawLab.sim",
+  "componentType": "TSim",
+  "event": "simStarted",
+  "time": 1615190243149,
+  "parameters": {
+    "sessionID": null,
+    "simName": "‪Beer's Law Lab‬",
+    "simVersion": "1.6.15-phetio",
+    "url": "https://phet-io.colorado.edu/sims/beers-law-lab/1.6.15-phetio/beers-law-lab_en-phetio.html?production&amp;phetioEmitStates=false&amp;phetioEmitInputEvents=false&amp;sim=beers-law-lab",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36 Edg/89.0.774.45",
+    "randomSeed": 0.2827905015753309,
+    "provider": "PhET Interactive Simulations, University of Colorado Boulder"
+  },
+  "children": [
+    {
+      "messageIndex": 3,
+      "eventType": "model",
+      "phetioID": "beersLawLab.concentrationScreen.view.concentrationMeterNode.bodyNode.readoutTextNode",
+      "componentType": "TTandemText",
+      "event": "textChanged",
+      "time": 1615190243236,
+      "parameters": {
+        "oldText": "‪1.000 ‪mol/L‬‬",
+        "newText": "-"
+      }
+    },
+    {
+      "messageIndex": 4,
+      "eventType": "model",
+      "phetioID": "beersLawLab.beersLawScreen.view.detectorNode.bodyNode.valueNode",
+      "componentType": "TTandemText",
+      "event": "textChanged",
+      "time": 1615190243280,
+      "parameters": {
+        "oldText": "‪100.00%‬",
+        "newText": "-"
+      }
+    }
+  ]
+}</textarea></div>
+<!--Specify the simulation to run in the iframe.  It must specify the query parameter ?iframeAPI to enable that feature in Sim.js-->
+<!--This example also uses a custom built version that includes phetioEvents logging.-->
+<script type="text/javascript" src="https://phet-io.colorado.edu/sims/beers-law-lab/1.6/wrappers/common/js/assert.js"></script>
+<script type="text/javascript" src="https://phet-io.colorado.edu/sims/beers-law-lab/1.6/wrappers/common/js/SimIFrameClient.js"></script>
+<script type="text/javascript" src="https://phet-io.colorado.edu/sims/beers-law-lab/1.6/wrappers/common/js/WrapperUtils.js"></script>
+<script type="text/javascript" src="https://phet-io.colorado.edu/sims/beers-law-lab/1.6/lib/phetio.js"></script>
+
+</body></html>

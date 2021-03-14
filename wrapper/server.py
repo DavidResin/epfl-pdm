@@ -1,0 +1,1 @@
+# https://stackoverflow.com/questions/29987323/how-do-i-send-data-from-js-to-python-with-flask#:~:text=1%20Answer&text=To%20get%20data%20from%20Javascript,get%20it%20in%20different%20ways.
