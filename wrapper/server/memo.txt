@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/24468459/sending-a-json-to-server-and-retrieving-a-json-in-return-without-jquery
+https://www.javatpoint.com/php-append-to-file
+
+document.getElementById("textarea").select()
+x.select()
+undefined
+document.execCommand("copy")
+
+if (window.getSelection) {
+	window.getSelection().removeAllRanges();
+} else if (document.selection) {
+	document.selection.empty();
+}
